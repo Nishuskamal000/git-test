@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question2</title>
+</head>
+<body>
+    <h4>Program to truncate a string to a certain length.</h4>
+    <p id = "truncate"></p>
+
+    <script>
+       var yourString = "This is very good"; 
+       var ToatalStringLength = yourString.length;
+      
+		var maxLength = 10 ;
+		var trimmedString = yourString.slice(0, maxLength ); //String trimmed
+    
+
+		trimmedString = trimmedString.substr(0, Math.min(trimmedString.length,trimmedString.lastIndexOf(" "))); //trimmed before space
+        
+      
+
+        var l1= trimmedString.length; //length of trimmed string
+      
+
+        var SecondSubString=yourString.slice(l1+1, ToatalStringLength); //finding rest of sentance after space
+        
+       
+        var l2 =SecondSubString.indexOf(" "); // finding next space index
+       
+        l1=l1+1; // adding space 
+ 		var finResult=yourString.substring(0, l1+l2);
+        
+        document.getElementById("truncate").innerHTML =finResult;
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question5</title>
+</head>
+<body>
+    <h4> Create a function getNameComponents, which takes a full name as input.</h4>
+    <p id = "names"></p>
+    <button onclick="myFunction()">Print</button>
+
+    <p id="demoeee"></p>
+    <p id="demo"></p>
+    <p id="demoe"></p>
+    <p id="demoee"></p>
+    
+    
+    <script>
+    function myFunction() {
+     var str = "Mr Paul Vintson Daniel";
+    var wordCount = str.match(/(\w+)/g).length;
+    if(wordCount == 3){
+        var fullName = str.split(' ');
+         var sal = fullName[0];
+         var firstName = fullName[fullName.length - 2];
+        var lastName = fullName[fullName.length - 1];
+          document.getElementById("demo").innerHTML = "Salutaion :" + sal;
+        document.getElementById("demoe").innerHTML =  "FirstName : " + firstName;
+        document.getElementById("demoee").innerHTML =  "LastName : " + lastName;
+     
+      }
+      else if(wordCount == 4){
+        var fullName = str.split(' ');
+         var sal = fullName[0];
+         var firstName = fullName[fullName.length - 3];
+         var middleName = fullName[fullName.length - 2];
+        var lastName = fullName[fullName.length - 1];
+          document.getElementById("demoeee").innerHTML = "Salutation : " + sal;
+          document.getElementById("demo").innerHTML = "FirstName : " + firstName;
+        document.getElementById("demoe").innerHTML =  "MiddleName : " + middleName;
+        document.getElementById("demoee").innerHTML =  "LastName : " + lastName;
+     
+      }
+    }
+    </script>
+    
+</body>
+</html>

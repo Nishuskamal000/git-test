@@ -1,0 +1,136 @@
+1. Inheritance : Inheritance is the mechanism by which an object acquires the some/all properties of another object.
+Inheritance types :
+	i)Single Inheritance
+	ii)Multiple Inheritance
+	iii)Multilevel Inheritance
+	iv)Heirarchial Inheritance
+	v)Hybrid Inheritance
+
+i) Single Inheritance:
+In single inheritance there exists single base class and single derived class.
+Example : A base mobile features is extended by Samsung brand.
+
+ii) Multiple Inheritance: 
+In multiple inheritance there exist multiple classes and singel derived class.The concept of multiple inheritance is not supported in java through concept of classes but it can be supported through the concept of interface.
+Example :Child inherits properties from Both Father and Mother which can be taken as two different claases.
+
+iii) Multilevel Inheritance:
+In Multilevel inheritances there exists single base class, single derived class and multiple intermediate base classes.
+Example : A base Mobile is extended by Samsung brand and Samsung brand is extended by Samsung S5 model.
+
+iv) Heirarchial Inheritance:
+Hierarchical inheritance is a kind of inheritance where more than one class is inherited from a single parent or base class. Especially those features which are common in the parent class is also common with the base class.
+Example : A base class mobile is extended by Nokia brand and Samsung brand.
+
+v) Hybrid Inheritance:
+When there is a combination of more than one form of inheritance, it is known as hybrid inheritance.
+Example : Multilevel inheritance-->A base Student inherits ExamMarks and ExamMarks is inherited by Results.
+Multiple inheritance--> Results inherits properties from ExamMarks and Project class.
+Both inheritance together forms a Hybrid inheritance.
+
+3) Polymorphism:
+Polymorphism is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
+Real life example of polymorphism: A person at the same time can have different characteristic. Like a man at the same time is a father, a husband, an employee. So the same person posses different behavior in different situations. This is called polymorphism.
+
+Encapsulation:
+Encapsulation is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit. In encapsulation, the variables of a class will be hidden from other classes, and can be accessed only through the methods of their current class. Therefore, it is also known as data hiding.
+Real life example of encapsulation : Capsule, basically, capsule encapsulates several combinations of medicine.
+
+4) + operator :
+Strings concatenation (+): For example, str1 + str2 concatenates two string objects to produce a new string object.
+Example:// Number + Number -> addition --> 1 + 2 // 3
+	// String + String -> concatenation-->'foo' + 'bar' // "foobar"
+
+Assignment (=): For example, str1 = str2 assigns str2 into str1.
+Example: x = 5;
+	 y = 10;
+	 z = 15
+	 x = y; // x becomes 10
+	 y = z; // y becomes 15
+
+The equality operator (==) checks whether its two operands are equal, returning a Boolean result.
+Example : 1 == 1; // true
+	  "hello" == "hello";  // true
+
+5)Access specifiers(or access modifiers) in object oriented programming:
+Access specifiers(or access modifiers) are used to set the accessibility of classes, methods and variables.
+
+Types of modifiers
+Public
+Private
+Protected
+Internal
+Protected Internal
+Public
+Can be accessible outside the class (anywhere) in the same assembly or another assembly.
+
+Private
+Accessible only in the same class.
+
+Protected
+Accessible in the same class or in a derived class of that class.
+
+Internal
+Accessible anywhere in the code with in the assembly. But not accessible in another assembly.
+
+Protected Internal
+Accessible anywhere in the code with in the assembly. And accessible only in derived class in another assembly.
+
+6)Method Overloading:
+Method overloading allows a class to define multiple methods with the same name, but different signatures. That is, it allows you to define different methods that have the same name, but that respond to correspondingly different messages sent to an instance of the class.
+
+Method Overriding:
+Method overriding, in object-oriented programming, is a language feature that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its superclasses or parent classes.
+
+7)Hybrid Inheritance:
+When there is a combination of more than one form of inheritance, it is known as hybrid inheritance.
+Example : Multilevel inheritance-->A base Student inherits ExamMarks and ExamMarks is inherited by Results.
+Multiple inheritance--> Results inherits properties from ExamMarks and Project class.
+Both inheritance together forms a Hybrid inheritance.
+
+8)Constructor :
+A constructor is a special method of a class or structure in object-oriented programming that initializes a newly created object of that type. Whenever an object is created, the constructor is called automatically.A constructor is like an instance method that usually has the same name as the class, and can be used to set the values of the members of an object, either to default or to user-defined values.
+Destructor :
+A destructor is a special method called automatically during the destruction of an object. Actions executed in the destructor include the following:
+	Recovering the heap space allocated during the lifetime of an object
+	Closing file or database connections
+	Releasing network resources
+	Releasing resource locks
+	Other housekeeping tasks
+9)Array :
+Arrays are fixed in size i.e once the array with the specific size is declared then we can't alter its size afterward.	
+Arrays due to fast execution consumes more memory and has better performance.	
+Arrays can hold the only the same type of data in its collection i.e only homogeneous data types elements are allowed in case of arrays.	
+Arrays can hold both object and primitive type data.	
+Arrays due to its storage and internal implementation better in performance.	
+
+Collection :
+The collection is dynamic in size i.e based on requirement size could be get altered even after its declaration.
+Collections, on the other hand, consume less memory but also have low performance as compared to Arrays.
+Collection, on the other hand, can hold both homogeneous and heterogeneous elements.
+Collection can hold only object types but not the primitive type of data.
+Collection on the other hand with respect to performance is not recommended to use.
+
+10)Data Types:
+Data types can roughly be described as: numbers, booleans, characters, arrays, and structures. Some languages like ActionScript replace characters with "strings". Object oriented languages, such as C++ and Java replace "structures" with "objects".
+Numbers, (e.g., 7, 3.14).
+ students_listening = 112;                    % an "integer" (whole) number 
+ 
+ average_number_of_students_in_class = 89.5;  % a "double" (a real) number 
+
+Booleans (true or false)
+ if 1 > 2; //true
+ {}
+
+Characters ('a', 'b', ... 'z', '1', '2', ... '9', '!', '^', etc)
+ middle_initial = 'j'; 
+
+Arrays (a list of data (all of the Same Data Type!))
+ student_grades = [97, 78, 88, 93, 89];
+
+Structures (a collection of named data referring to a single entity)
+struct tag_name {
+        type member1;
+        type member2;
+        /* declare as many members as desired, but the entire structure size must be known to the compiler. */
+    };
